@@ -1,0 +1,139 @@
+[INCLUDE=style/lncs]
+Title         : EXPERIMENTAL SMALL-SCALE MODELING OF FLASHOVER 
+
+
+Author        : Prof. Jana Müllerová
+Affiliation   : Department of Fire Engineering, 
+                Faculty of Security Engineering, 
+                University of Zilina 
+Email         : Jana.Mullerova@fbi.uniza.sk
+
+Bibliography  : references.bib
+Logo          : False
+Tex Header    :
+  \def\refname{&name-references;}
+name-references : REFERENCES
+
+[TITLE]
+
+~ Abstract
+The paper deals with experimental small-scale modeling of room interior for flashover prevention purposes. Flashover phenomenon can be described as the most dangerous stage of fire, resulting in almost instantaneous ignition of combustible material in the majority of the whole space of the room The well designed small scale models reach the accuracy comparable to full-scale models of building fires. The 3D models of the object were constructed Via the Froude modeling and established patterns of Quintier dimensionless dimensional π - groups. Wood cribs as the fuel source were used with anticipated dimensions and fire parameters in full scale. The basic fire parameters such as heat flux and temperature dynamic were measured by numerous thermocouples placed within the 3D cubic model. Experimental data were used for mathematical model of trend curves in order to predict the fire behavior. The mathematical model might be used for flashover prediction and fire prevention as well. Suitability and accuracy of Froude relation application (time reducing, energy equation, space borders and fuel type) has been confirmed by two experimental fire tests at High School of Fire Protection, Ministry of Interior.
+
+**Key words:** Inner fire modeling on a reduced scale, flashover, modeling principles.
+~
+
+[editor]: https://www.madoko.net/editor.html "Madoko.net Editor"
+[reference-manual]: http://research.microsoft.com/en-us/um/people/daan/madoko/doc/reference.html "Madoko Reference Manual"
+[femtc2016]: https://github.com/thunderheadeng/femtc2016
+[emaillink]: mailto:conference@thunderheadeng.com "conference@thunderheadeng.com"
+
+# FLASHOVER { #sec-intro }
+The FLASHOVER is a near-simultaneous ignition of most of the directly exposed combustible material in an enclosed area. The PREDICTION of flashover appearance is the key to prevent severe accidents affecting fire fighters. Early warning of Flashover prevents fatalities of Fire & Rescue Corps. The extended knowledge on Flashover conditions, material sources, temperatures, statistics and probabilities of its appearance will help to increase the fire safety of buildings in cooperation to material and construction engineers. The vision is to construct the buildings with such interiors having 0% probability to start the fire leading to flashover state [@Heskestad]. 
+
+Full scale Experimental modeling of real fire accident situation is the most probably the oldest form of experimental fire engineering. Although, this way is very costly, the results in form of measured data of fire-relevant physical quantities such as temperatures, heat release rate, mass loss and their development during the experiment are very valuable. On the other hand the disadvantages are connected to time-consuming preparation, human resources required, funding. The repeating of full scale experiment is also very rare.
+
+On the other side there are various software simulations trying to reflect the variability of interior material, construction shape, anti-fire elements and systems within the constructions like sprinklers, fire barrier, chemical fire retardants, sensors and alarms of early warning etc. The highest accuracy still belongs to full-scale models. Full-scale modelling is very often used to get the input data for PC modelling. The realistic accuracy is the biggest advantage [@Mullerova]. 
+
+# SMALL SCALE MODELING
+The future belongs to PC modeling, as we all know. What about its accuracy? There are many simplifications and many approximations included. The accuracy depends on quality of input data. The output of model can be accurate only with high quality inputs. That is the reason why PC software need data of real full scale experiments. Many data and many realistic measurements are needed. But full scale modelling is very slow. Full-scale models takes too much time for. Especially models of entire buildings are very rare.  And this is the place for small-scale modelling. It enables much more iterations at the same time comparing to full-scale experiments. Its accuracy is comparable to full-scale modelling. The biggest advantage is the price for experiment reflecting much shorter preparation time. It enables more iterations in various conditions. The output data might be used in the PC modeling. 
+
+~ TableFigure { #table-sample; caption: "Comparing of fire modelling systems"; .wide }
+| Criteria                           | PC simulation      | Full-scale modeling | Small-scale modeling |
+|:-----------------------------------+:-------------------|:--------------------|:---------------------|
+|------------------------------------|--------------------|---------------------|----------------------|                                   |                    |                     |                      |
+| **Accuracy**                       | Upper intermediate | High                | High                 |
+| **Relative costs**                 | Tousands           | Ten tousands        | Hundreds             |
+| **Professional competence needed** | Advanced           | Upper intermediate  | Upper intermediate   |
+| **Preparation time needed**        | Months, years      | Months              | Weeks                |
+| **Number of Iterations**           | Unlimited          | Very limited        | Limited              |
+~
+
+# MODEL SCALING RULES
+Construction of 3D small-scale models need to meet several criteria. Detection of interdependence between the relevant periods and time differences of selected observable indicators flashover phenomenon in the form of correlations at different fire load and fuel type. The experimental fire tests are focused on temperature changes related to time of flashover appearance, analysis of the emissions released by combustion of fuel used, the fuel burning rate during flashover, heat flux at floor level during flashover, observable variables such as time when the flames reached the ceiling in the fire area, time at which flames appeared in the vents, time to reach flashover phenomenon, time to the heat flow of 20 kW.m^-2^ at the floor level [@Holdon].
+
+The construction of small-scale 3D models need to keep some conditions. Detection depending on the relevant time periods chosen observable indicators of flashover in the form of correlations at different fire load and the type of fuel. The experimental fire tests focus change of temperature at time of flashover, the heat flux at ground level during flashover, observable variables like the time when a flame of fire reached the ceiling, the time at which the flames appear in the ventilation holes, the time of flashover, time, heat flux of 20 kW. m^-2^ at the floor level.
+
+We applied the universal dimensionless groups using correlation models of full and reduced scale. Scaling was calculated using the work Perricone [@Perricone] and Quintire [@Quintiere]. Through their experiments, we can calculate the scaling rules wall material, changes in the gas flow, fuel switching, outside temperatures and wall thickness. Croce is a very important relationship porosity of wooden cages and weight loss [@Croce].
+
+Modeling of fire in a confined space has been designed in accordance to the conditions formulated by Peter Veloo [@Veloo]: 
+
+
+
+
+1. Small-scale model, in reduction scale of 4:1 must be based on real experiments conducted in full scale.
+2. Reducement rules (laws) stated in theory must be followed.
+3. Fuel load must represent a realistic fire load.
+4. The combustion duration of fuel pack (crib) in full-scale (prototype) need to be 1 hour.
+5. Prisms in the fuel package must be layered in at least 2 layers.
+6. The fuel pack must burn in a heavily controlled mode - densely packed package.
+7. We have applied also Pericone’s time scaling, where the experiment time is calculated as a square root of scale (t ~ s^1/2^) This equation gives very exact results of modeling.
+8. Following Veloo’s conditions, first of all a full-scale model need to be done. In our case at the beginning there was a successful full-scale model test done by some years ago. This full-scale model we later called the Prototype.
+
+~ TableFigure { #fig-groups; caption:"Dimension less scaling groups and scaling rules."}
+![groups]
+~
+[groups]: images/1.png "groups" { width:auto; max-width:100% }
+
+The Prototype – full scale model -  was constructed of brick blocks with a ceiling of steel beams. The wall thickness was 45 cm. The prototype dimensions are 5.3 m x 4.85 m x 2.6 meters. It has two symmetrically arranged holes 1.65 𝑚 and 2.45 m, its ventilation parameter 𝐹~0~ = 0.0518 𝑚. Spruce wood with density of 450 𝑘𝑔 .𝑚^−3^ cut into prisms of 5 x 5 x 120 cm. The prisms were arranged into six cubic-shaped wood cribs. The distance between the prisms is equal to their size. The floor fire load was 30 𝑘𝑔.𝑚^-2^. The spaces between the cribs were filled by wood-wool in the ratio of 1:70. Initiation of fire was carried out electrically using one liter of alcohol.
+
+The walls on a reduced scale model was made of plasterboard and insulation. Drywall 1.25 cm thick and mineral wool 5 cm thick (affixed with adhesive) correspond to the brick blocks 45 cm thick. Brick blocks were used to construct the walls of the prototype. The walls are embedded in a metal frame wooden crates are made from spruce prisms of 5 or 6 layers. The fire was initiated by the electric pulse and spirit on a wooden wave between cages inside.
+
+~ Figure { #fig-model; caption:"Inner view into the small-scale model."}
+![model]
+~
+[model]: images/2.png "model" { width:auto; max-width:100% }
+
+Into the interior we placed six cages. In the experiments, the most commonly used gas burner, a container of combustibles or fuel bundle of wood. The choice of fuel depends on the required maximum. temperature compared with respect to a real fire (the prototype). Then it reaches relatively the same temperature, heat flux and other characteristics of the model at full scale. Wooden crates are minimized by dimensionless groups. The rate of heat flow is controlled by the number and dimensions of the prisms and the spaces between them.
+
+#EXPERIMENT RESULTS
+Values of monitored parameters were recorded by measuring panel type Almemo 5690-1 with K-type thermocouple Figure 2 shows a thermocouple located inside the structure. Inside the space is located 20 thermocouples. They are situated in three layers. The ventilation holes are 5 thermocouples.
+Total parameters to scale prototype model D30 and D45 are as follows. They relate to the dimensions, number of layers, the number of prisms in a single layer, porous parameter which reflects the spacing between each prism and the total weight of the package. Fire load was changing the number of layers of prisms.
+
+~ Figure { #fig-thermocouples; caption:"Sketch deployment thermocouples."}
+![thermocouples]
+~
+[thermocouples]: images/3.png "thermocouples" { width:auto; max-width:100% }
+
+There were 2 experiments done. In the first test, was used fire load of 30 kg/m^2^. In the second test it was 45 kg/m^2^. The figure is a moment flashover in the first and second measurements e.g. with a load of 30 kg/m^2^ and 45 kg/m^2^ on the right. Flashover time was achieved with 381 at an average temperature of the overhead gas of 584.2 °C. During the flashover phenomenon was not flash all the packages in the area. Two criteria for the creation of flashover (the overhead gas temperature from 575 to 600 °C and the flame vents) were observed and temperature readings filled.
+
+~ Figure { #fig-flashover; caption:"Moment of flashover by test A and test B."}
+![flashover]
+~
+[flashover]: images/4.png "flashover" { width:auto; max-width:100% }
+
+The results of measurement are as follows. Maximum temperatures under the ceiling were 916.9 and 1084.4 °C were measured at the time of 1440s and 1980s. Flashover time was 381s (Test A), respectively. P 452 (test B). The temperature at Flashover was 584.2 °C and 600.1 °C. The average speed of the rising gas was 0.71 and 0.56 °C/s. The maximum speed of the rising hot gases were 2.18 and 2.38 °C/s.
+Of course the recorded temperature selected thermocouples can be observed differences especially when the floor temperature. Showing black and blue curves. In both cases, the max. Floor temperature reached more quickly than the maximum temperature of the ceiling.
+
+~ Figure { #fig-graph1; caption:"Temperature performance by test A and test B."}
+![graph1]
+~
+[graph1]: images/5.png "graph1" { width:auto; max-width:100% }
+
+Have a different course of temperature on the back and the front wall, which opened two holes.
+Comparing the prototype e.g. Full-scale model of our small-sized models, can be a high level of similarity. Scale model in scale 1: 4 has a very similar pattern of temperatures as the prototype. This outcome is also proof of the real similarities models on a reduced scale in compliance with all conditions of correct scaling parameters [@Reichel].
+
+~ Figure { #fig-graph2; caption:"Temperature performance in prototype object and the experimental miniaturized model 1:4."}
+![graph2]
+~
+[graph2]: images/6.png "graph2" { width:auto; max-width:100% }
+
+~ TableFigure { #table-sample2; caption: "Comparing of measured and calculated results after flash-over"; .wide }
+| Fire load [kg.m^-2^] | Max. average temp. measured [°C] | Law´s equation [°C] | EuroCode parametric equation [°C] |
+|:---{width:20%}------:+:--------------------------------:|:-------------------:|:---------------------------------:|
+|----------------------|----------------------------------|---------------------|-----------------------------------|
+| **30 - model**       | 946,9                            | 990,88              | 1010,9                            |
+| **30 - prototype**   | 902                              |                     |                                   |
+| **45 - model**       | 1095,5                           | 1098,83             | 1068,94                           |
+| **45 - prototype**   | 1020                             | 1040,81             | 1112,34                           |
+~
+
+Maximum temperatures were previously calculated using two equations. We can see that the Law's crew equation in our case more accurately corresponds to the measured value as EuroCode parametric equations. Especially in the second small-sized model values they were calculated consistent with the measurements. Match-ester Law calculation equation and the measured values of the two models was surprisingly high, as compared with the prototype normal values were lower by about 8-10% than the value calculated.
+
+# Conclusion
+Modelling on a reduced scale using dimensionless groups for compliance with the criteria of decreasing provides very similar results as a model in full scale. During the experiment it was very similar, including the prototype of the phenomenon of flashover. The results of both experiments confirm the high conformity with the model in full scale. The values also correspond to calculations by two different equations, and Law's crew equation shows when the A and B greater correlation with measured values as EuroCoDe equation. We can say that models in reduced scale represent a large, yet underused potential for obtaining input data in modern computer programs that simulate fires or evacuating the accuracy of the model at full scale. Modeling on a reduced scale can also make use of the forensic detection of fires or causes. fire engineering.
+
+[BIB]
+
+&pagebreak;
+
+
